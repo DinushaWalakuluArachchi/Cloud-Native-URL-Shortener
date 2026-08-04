@@ -1,3 +1,33 @@
+server:
+  port: 8080
+
 spring:
   application:
-    name: url-shortner
+    name: url-shortener
+  datasource:
+    url: jdbc:postgresql://localhost:5433/url_shortener
+    username: postgres
+    password: Dinusha@020040225.
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+  data:
+    redis:
+      host: localhost
+      port: 6380
+
+url:
+  base-domain: http://localhost:8080
+  cache-ttl-hours: 24
+  short-code-length: 6
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus,metrics
+  prometheus:
+    metrics:
+      export:
+        enabled: true
