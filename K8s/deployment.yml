@@ -22,6 +22,8 @@ spec:
           envFrom:
             - configMapRef:
                 name: url-shortener-config
+            - secretRef:
+                name: url-shortener-db-secret
           resources:
             requests:
               cpu: "250m"
