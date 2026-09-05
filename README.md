@@ -171,6 +171,3 @@ This is part of a three-project portfolio covering different dimensions of backe
 2. **[Distributed Payment Engine](#)** — Saga orchestration, idempotency, fraud detection
 3. **Cloud-Native URL Shortener** (this project) — Kubernetes, AWS EKS, CI/CD, verified auto-scaling under load
 
-## License
-
-MIT
